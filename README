@@ -1,7 +1,7 @@
 Ras2Vec scans through all raster images (only .bmp files supported at the moment) in a folder and converts them to eps using an algorithmic tracing tool (Potrace at the moment), and then converts them to SVG using the Ghostscript command line utility.
 
 //---------------------------------------------------------------
-// *Dependencies*
+// Dependencies - Add these to your PATH
 //---------------------------------------------------------------
 
 1) Potrace - http://potrace.sourceforge.net/#downloading
@@ -26,6 +26,6 @@ Ghostscript is written entirely in C, with special care taken to make it run pro
 Download link: http://www.ghostscript.com/download/
 
 //---------------------------------------------------------------
-// *License*
+// License
 //---------------------------------------------------------------
 Because dependencies are GPL, this perl script is also licensed under GLP.
