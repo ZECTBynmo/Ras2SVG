@@ -4,13 +4,13 @@ Ras2Vec scans through all raster images (only .bmp files supported at the moment
 // *Dependencies*
 //---------------------------------------------------------------
 
-1) Potrace - an algorithmic edge detection tool that converts raster images into eps format
+1) Potrace - http://potrace.sourceforge.net/#downloading
 
-Download link: http://potrace.sourceforge.net/#downloading
+Ghostscript is an algorithmic edge detection tool that converts raster images into vector formats
 
-2) Ghostscript - From their site:
+2) Ghostscript - http://www.ghostscript.com/download/
 
-Download link: http://www.ghostscript.com/download/
+From their site:
 
 Ghostscript is a package of software that provides:
 
