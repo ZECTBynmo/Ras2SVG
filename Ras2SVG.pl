@@ -1,9 +1,15 @@
-#!/bin/sh
-for file in *.bmp
-do
-potrace "$file";
-done
-for file in *.eps
-do
-gswin32 -dEPSFitPage -sDEVICE=svg -sOutputFile=$file.svg "$file" quit.ps;
-done
+#!/bin/perl
+use File::Basename;
+
+my @bmpFiles = glob("*.bmp");
+
+for my $file (@bmpFiles) {
+	system("potrace.exe", $file);
+}
+
+my @epsFiles = glob("*.eps");
+
+for my $file (@epsFiles) {
+	my ($filename) = substr($file, 0, rindex($file, '.'));
+	system( "gswin32.exe -dEPSFitPage -sDEVICE=svg -sOutputFile=$filename.svg '$file' quit.ps" );
+}
