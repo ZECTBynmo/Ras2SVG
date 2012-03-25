@@ -1,1 +1,28 @@
-Ras2Vec scans through all .bmp files in a folder and converts them to eps using potrace (an algorithmic tracing tool), and then converts them to SVG using Ghostscript.
+Ras2Vec scans through all raster images (only .bmp files supported at the moment) in a folder and converts them to eps using an algorithmic tracing tool (Potrace at the moment), and then converts them to SVG using the Ghostscript command line utility.
+
+//---------------------------------------------------------------
+// Dependencies
+//---------------------------------------------------------------
+1) Potrace - an algorithmic edge detection tool that converts raster images into eps format
+
+Download link: http://potrace.sourceforge.net/#downloading
+
+2) Ghostscript - From their site:
+
+Ghostscript is a package of software that provides:
+
+Download link: http://www.ghostscript.com/download/
+
+1) An interpreter for the PostScript (TM) language, with the ability to convert PostScript language files to many raster formats, view them on displays, and print them on printers that don't have PostScript language capability built in;
+2) An interpreter for Portable Document Format (PDF) files, with the same abilities;
+The ability to convert PostScript language files to PDF (with some limitations) and vice versa; and
+3) A set of C procedures (the Ghostscript library) that implement the graphics and filtering (data compression / decompression / conversion) capabilities that appear as primitive operations in the PostScript language and in PDF.
+
+Ghostscript is written entirely in C, with special care taken to make it run properly on a wide variety of systems, including MS Windows, Apple MacOS, the wide variety of Unix and Unix-like platforms and VMS systems.
+
+Download link: http://www.ghostscript.com/download/
+
+//---------------------------------------------------------------
+// License
+//---------------------------------------------------------------
+Because dependencies are GPL, this perl script is also licensed under GLP.
