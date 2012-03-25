@@ -6,6 +6,7 @@ my @bmpFiles = glob("*.bmp");
 
 print( "\nConverting all .bmp files into .eps intermediate files\n" );
 for my $file (@bmpFiles) {
+	## Trace the outline of the important regions using potrace
 	system("potrace.exe", $file);
 }
 
