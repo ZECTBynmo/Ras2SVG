@@ -1,0 +1,1 @@
+Ras2Vec scans through all .bmp files in a folder and converts them to eps using potrace (an algorithmic tracing tool), and then converts them to SVG using Ghostscript.
